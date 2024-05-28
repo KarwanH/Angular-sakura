@@ -1,0 +1,40 @@
+section {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(25, 24, 35);
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    > a {
+      text-decoration: none;
+      padding: 8px;
+      display: block;
+      position: relative;
+
+      &:nth-child(1) {
+        color: white;
+        font-size: larger;
+        &:hover {
+          color: rgb(154, 41, 41);
+        }
+      }
+
+      > img {
+        object-fit: cover;
+        width: 55px;
+        height: auto;
+        transition: transform 0.3s; /* Hier hinzugefügt */
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
